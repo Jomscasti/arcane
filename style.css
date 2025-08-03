@@ -1,28 +1,4 @@
-/* Navbar */
-.navbar {
-    background-color: #000;
-}
-
-.navbar .navbar-brand img,
-.navbar-toggler-icon {
-    filter: brightness(0) invert(1);
-}
-
-.navbar .navbar-brand,
-.navbar .nav-link {
-    color: #ddd;
-    font-weight: bold;
-}
-
-.navbar .nav-link.active {
-    color: #fff;
-}
-
-.navbar .nav-link:hover {
-    color: #aaa;
-}
-
-/* Synopsis Section */
+/* Hero Synopsis Section */
 .synopsisContainer {
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +7,6 @@
     padding: 40px;
     background: url("https://cmsassets.rgpub.io/sanity/images/dsfx7636/news/a896937c9837514617dbe97f9a1ac0baad9b1df5-2000x762.png?auto=format&fit=fill&q=80&h=640") center/cover no-repeat;
     color: #fff;
-    font-family: Arial, sans-serif;
     margin-top: -70px;
 }
 
@@ -66,14 +41,13 @@
     justify-content: center;
 }
 
-.imageContainer img,
 img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-/* Responsive */
+/* Responsive Layout for Synopsis */
 @media (max-width: 768px) {
     .synopsisContainer {
         flex-direction: column;
@@ -107,7 +81,6 @@ img {
     color: #fff;
     margin-top: -220px;
     margin-bottom: 30px;
-    font-family: Arial, sans-serif;
 }
 
 .availabilityBoxHeader {
@@ -120,43 +93,4 @@ img {
 .availabilityLinks img {
     max-height: 60px;
     width: 150px;
-}
-
-/* Footer */
-.footer {
-    background-color: #111 !important;
-    color: #bbb;
-    font-family: Arial, sans-serif;
-}
-
-.footer h5 {
-    font-size: 18px;
-    color: #fff;
-    margin-bottom: 15px;
-}
-
-.footer p,
-.footer a.footer-link {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #aaa;
-    text-decoration: none;
-}
-
-.footer a.footer-link:hover {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.footer img {
-    filter: invert(1);
-    transition: opacity 0.3s;
-}
-
-.footer img:hover {
-    opacity: 0.7;
-}
-
-.footer hr {
-    border-top: 1px solid #444;
 }

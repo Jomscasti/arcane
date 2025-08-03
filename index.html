@@ -11,40 +11,50 @@
         href="https://cmsassets.rgpub.io/sanity/images/dsfx7636/content_organization/8f1bf8ab2c10ad5765119dae42b778b143952a31-128x139.png"
         sizes="any">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
-<body data-bs-theme="dark" style="background-color: black;">
+<body data-bs-theme="dark" style="background-color: black; font-family: Arial, sans-serif;">
 
-    <nav class="navbar navbar-expand-lg fixed-top" style="position: relative; width: 100%; overflow: hidden;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="https://www.arcane.com/en-sg/" target="blank"><img
-                    src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar_live/0a84802ee86faba072060b94af24f722f3aabb9c-27x32.svg?&h=50&fit=max"
-                    alt="ARCANE" width="30" height="30" />
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="https://www.arcane.com/en-sg/news/" target="_blank">NEWS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="https://www.netflix.com/ph-en/title/81435684" target="_blank">WATCH
-                            NOW</a>
-                    </li>
-                </ul>
-            </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-black sticky-top border-bottom">
+    <div class="container">
+        <!-- Arcane Logo -->
+        <a href="https://www.arcane.com/en-sg/" class="navbar-brand" aria-label="Arcane" target="_blank">
+            <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar_live/0a84802ee86faba072060b94af24f722f3aabb9c-27x32.svg?&h=50&fit=max"
+                alt="Arcane Logo" width="29" height="29">
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarMenu">
+            <ul class="navbar-nav mb-2 mb-lg-0 me-lg-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.arcane.com/en-sg/news/" target="_blank">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="https://www.netflix.com/title/81435684" target="_blank">Watch
+                        Now</a>
+                </li>
+            </ul>
+            <a href="https://www.arcane.com/en-sg/" class="btn btn-outline-light btn-sm px-3"
+                target="_blank">Explore</a>
         </div>
-    </nav>
+    </div>
+</nav>
+
 
     <div class="container-fluid p-0" style="position: relative; width: 100%; overflow: hidden;">
         <div class="row">
-            <div class="col" style="height: 130vh;">
+            <div class="col" style="height: 140vh;">
                 <iframe style="pointer-events: none; margin-left: 50%; transform: translateX(-50%); margin-top: -80px;"
                     width="4000px" height="100%"
                     src="https://www.youtube.com/embed/hsffPST-x1k?si=aoqbp3te6DnToKoz&autoplay=1&mute=1&controls=0&rel=0&disablekb=1&loop=1&playlist=hsffPST-x1k&modestbranding=1"
@@ -91,41 +101,64 @@
         </div>
     </div>
 
-    <footer class="footer mt-auto py-4 bg-dark text-light">
-        <div class="container text-center">
-            <div class="row">
-                <div class="col-md-4 mb-3">
-                    <h5>About Arcane</h5>
-                    <p>Discover the story of Arcane, the animated series based on the League of Legends universe.</p>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="https://www.arcane.com/en-sg/" target="_blank" class="footer-link">Official
-                                Website</a>
-                        </li>
-                        <li><a href="https://www.netflix.com/title/81435684" target="_blank" class="footer-link">Watch
-                                on
-                                Netflix</a></li>
-                        <li><a href="https://www.arcane.com/en-sg/news/" target="_blank" class="footer-link">Latest
-                                News</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <h5>Connect with Us</h5>
-                    <a href="https://www.facebook.com/arcaneshow" class="footer-link me-2" ><img
-                            src="https://img.icons8.com/ios-filled/20/ffffff/facebook.png" alt="Facebook"></a>
-                    <a href="https://x.com/arcaneshow" class="footer-link me-2"><img
-                            src="https://img.icons8.com/ios-filled/20/ffffff/twitter.png" alt="Twitter"></a>
-                    <a href="#" class="footer-link"><img
-                            src="https://img.icons8.com/ios-filled/20/ffffff/instagram-new.png" alt="Instagram"></a>
+<!-- Footer -->
+<footer class="footer mt-auto py-5 border-top bg-dark bg-opacity-75 text-light">
+    <div class="container">
+        <div class="row gy-4 text-center text-md-start">
+
+            <!-- About Arcane -->
+            <div class="col-md-4">
+                <a href="https://www.arcane.com/en-sg/" class="d-inline-block mb-2" aria-label="Arcane">
+                    <img src="https://cmsassets.rgpub.io/sanity/images/dsfx7636/riotbar_live/0a84802ee86faba072060b94af24f722f3aabb9c-27x32.svg?&h=50&fit=max"
+                        alt="Arcane Logo" width="29" height="29">
+                </a>
+                <p class="mb-0 small text-light">
+                    Experience the rise of legends. Dive deep into Piltover and Zaun in a groundbreaking animated series
+                    based on the League of Legends universe.
+                </p>
+            </div>
+
+            <!-- Navigation -->
+            <div class="col-md-4">
+                <h5 class="fw-bold text-light">Explore</h5>
+                <ul class="list-unstyled small">
+                    <li><a href="#" class="text-decoration-none text-light">Home</a></li>
+                    <li><a href="https://www.arcane.com/en-sg/news/" class="text-decoration-none text-light"
+                            target="_blank">News</a></li>
+                    <li><a href="https://www.netflix.com/title/81435684" class="text-decoration-none text-light"
+                            target="_blank">Watch Now</a></li>
+                </ul>
+            </div>
+
+            <!-- Support & Social -->
+            <div class="col-md-4">
+                <h5 class="fw-bold text-light">Follow Us</h5>
+                <div class="d-flex justify-content-center justify-content-md-start gap-3 fs-4">
+                    <a href="https://www.facebook.com/arcaneshow" class="text-light" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://x.com/arcaneshow" class="text-light" target="_blank">
+                        <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="#" class="text-light" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.arcane.com/en-sg/" class="text-light" target="_blank">
+                        <i class="bi bi-globe"></i>
+                    </a>
                 </div>
             </div>
-            <hr class="bg-light">
-            <p class="mb-0">© 2024 Arcane. All rights reserved.</p>
         </div>
-    </footer>
+
+        <hr class="mt-4 text-light">
+
+        <p class="text-center text-light small mb-0">
+            &copy; 2025 <a href="https://www.arcane.com/en-sg/"
+                class="text-decoration-none text-light"><strong>Arcane</strong></a>. All rights reserved. A fan-made
+            showcase celebrating the world of Runeterra.
+        </p>
+    </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
